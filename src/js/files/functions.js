@@ -414,24 +414,24 @@ export function tabs() {
 Документація по роботі у шаблоні: https://template.fls.guru/template-docs/menu-burger.html
 Сніппет (HTML): menu
 */
-// export function menuInit() {
-// 	if (document.querySelector(".icon-menu")) {
-// 		document.addEventListener("click", function (e) {
-// 			if (bodyLockStatus && e.target.closest('.icon-menu')) {
-// 				bodyLockToggle();
-// 				document.documentElement.classList.toggle("menu-open");
-// 			}
-// 		});
-// 	};
-// }
-// export function menuOpen() {
-// 	bodyLock();
-// 	document.documentElement.classList.add("menu-open");
-// }
-// export function menuClose() {
-// 	bodyUnlock();
-// 	document.documentElement.classList.remove("menu-open");
-// }
+export function menuInit() {
+	if (document.querySelector(".icon-menu")) {
+		document.addEventListener("click", function (e) {
+			if (bodyLockStatus && e.target.closest('.icon-menu')) {
+				bodyLockToggle();
+				document.documentElement.classList.toggle("menu-open");
+			}
+		});
+	};
+}
+export function menuOpen() {
+	bodyLock();
+	document.documentElement.classList.add("menu-open");
+}
+export function menuClose() {
+	bodyUnlock();
+	document.documentElement.classList.remove("menu-open");
+}
 // Модуль "показати ще" =======================================================================================================================================================================================================================
 /*
 Документація по роботі у шаблоні: https://template.fls.guru/template-docs/modul-pokazat-eshhjo.html
