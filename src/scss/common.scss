@@ -1,0 +1,61 @@
+// Заголовки, загальні БЕМ блоки та інше...
+
+.title-block {
+
+    // .title-block__label
+
+    &__label {
+        @include adaptiveValue("margin-bottom",28 ,15 );
+    }
+
+    // .title-block__value
+
+    &__value {
+    }
+}
+
+
+.title{
+    font-weight: 500;
+    @include adaptiveValue("font-size",51 ,30 );
+    line-height: math.div(61 ,51 );
+    /* or 120% */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.text{
+    line-height: math.div(27,18);
+
+}
+
+.button{
+    padding: rem(16) rem(30);
+    font-weight: 500;
+    font-size: rem(14);
+    line-height: math.div(14 ,12 );
+    color:$whiteColor;
+    background: $backgroundBlueColor;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    &_grey{
+        color:$backgroundGreyColor;
+    }
+}
+
+.mini-button{
+    display: flex;
+    align-items: center;
+    padding: rem(11) rem(19);
+    font-size: rem(11);
+    line-height: math.div(16 ,10);
+    letter-spacing:2px;
+    text-transform: uppercase;
+    border: 1px solid rgba(129, 129, 139, 0.2);
+    border-radius: 12px;
+}
+
